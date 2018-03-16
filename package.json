@@ -1,0 +1,24 @@
+{
+  "name": "strydtest",
+  "version": "1.0.0",
+  "description": "strydtest",
+  "main": "search.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smacilwaine/StrydTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smacilwaine/StrydTest/issues"
+  },
+  "homepage": "https://github.com/smacilwaine/StrydTest#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "fs": "0.0.1-security"
+  }
+}
