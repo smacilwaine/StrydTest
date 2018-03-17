@@ -2,11 +2,13 @@
 
 ### Getting Started
 
-Clone into the repo. Then, in the StrydTest folder, run **node main.js** in Terminal. This will launch the web server and initiate the process that collects comments from the DC Rainmaker article.
+Clone into the repo with "git clone https://github.com/smacilwaine/StrydTest".
 
-Next, navigate to a web browser and go to **localhost:8080**.
+Make sure you have Node.js installed. If not, run "brew install node" or use another package manager to install it.
 
-Type in the keyword(s) and press Enter or hit the Submit button. A new page of results will load and display the matching comments and corresponding tags. 
+In the StrydTest folder, run **node main.js** in Terminal. This will launch the web server and initiate the process that collects comments from the DC Rainmaker article.
+
+Next, navigate to a web browser and go to **localhost:8080**. You can type in the keyword(s) and press Enter or hit the Submit button. A new page of results will load and display the matching comments and corresponding tags. 
 
 *Note*: It takes about 10 seconds for all the comments to load in the background, so if you have pressed Enter within 10 seconds of running **node main.js**, you may have to wait for a few seconds. I have purposely designed the code to not proceed to the next page until all the comments are loaded, but to save time, the comments begin loading as soon as **node main.js** is run, even if the web page is not open. The comments only need to load once.
 

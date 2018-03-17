@@ -53,7 +53,7 @@ function searchFn(keywords, comments){
 }
 
 async function loadComments() {
-	console.log("Loading comments..");
+	console.log("Loading comments...");
 	let list = [];
 	await axios({
 		method: 'get',
