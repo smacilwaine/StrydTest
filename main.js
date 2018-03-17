@@ -53,6 +53,7 @@ function searchFn(keywords, comments){
 }
 
 async function loadComments() {
+	console.log("Loading comments..");
 	let list = [];
 	await axios({
 		method: 'get',
@@ -72,6 +73,7 @@ async function loadComments() {
 						num = num+1;
 					});
 					COMMENTS = list;
+					console.log("Comments loaded.")
 			}
 		}, (error) => console.log(err) );
 }
