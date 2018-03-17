@@ -1,6 +1,6 @@
 # StrydTest
 
-##### Getting Started
+### Getting Started
 
 In terminal, run **node main.js**. This will launch the web server and initiate the process that collects comments from the DC Rainmaker article.
 
@@ -12,7 +12,7 @@ Type in the keyword(s) and press Enter or hit the Submit button. A new page of r
 
 If you wish to start again, simply press the Back button or navigate to **localhost:8080**.
 
-##### Description of Solution
+### Description of Solution
 
 *loadComments()*
 
