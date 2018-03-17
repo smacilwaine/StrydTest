@@ -1,3 +1,6 @@
+// Stryd Internship Coding Test
+// Samantha MacIlwaine, 2018
+
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
@@ -26,7 +29,7 @@ function searchFn(keywords, comments){
 	while (k < keys.length){
 		testkey = keys[k].toLowerCase();
 		for (var c in comments){
-			var testString = comments[c].toString().toLowerCase(); //replace comments[c] with testy
+			var testString = comments[c].toString().toLowerCase();
 			var s = testString.search(testkey);
 			while (s != -1){
 				// test the keyword found
@@ -34,12 +37,11 @@ function searchFn(keywords, comments){
 				var last = testString.substring(s+testkey.length, s+testkey.length+1);
 				var f = (first == first.toUpperCase());
 				var l = (last == last.toUpperCase());
-				if (f && l){ // asser that keyword is surrounded by special characters
+				if (f && l){
 					matches.push(comments[c]);
 					break;
 				}
 				else{
-					// check for later instances of keyword in the same comment
 					var testString = testString.substring(s+testkey.length+1, comments[c].length+1);
 					s = testString.toLowerCase().search(testkey);
 				}

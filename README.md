@@ -16,7 +16,7 @@ If you wish to start again, simply press the Back button or navigate to **localh
 
 *loadComments()*
 
-The first function that runs in **main.js** is **loadComments()**, which uses axios, a Promise-based HTTP client, to extract HTML code from the DC Rainmaker web page. It tracks each html tag with the "comment-body" class, then uses jQuery to combine paragraphs within individual comments by creating a new <div> tag at the top of each comment and appending the text of each <p> tag to it, in addition to an extra space " ", before copying over all the text in the <div> tag to an array of strings called **list**. This ensures that the last letter of one paragraph is separated by a space from the first letter of the next paragraph, and that all paragraphs in the comment are treated as one block of text. The array of scripts, **list** is then copied into a global variable called **COMMENTS** to ensure easy access by other functions.
+The first function that runs in **main.js** is **loadComments()**, which uses axios, a Promise-based HTTP client, to extract HTML code from the DC Rainmaker web page. It tracks each html tag with the "comment-body" class, then uses jQuery to combine paragraphs within individual comments by creating a new div tag at the top of each comment and appending the text of each p tag to it, in addition to an extra space " ", before copying over all the text in the div tag to an array of strings called **list**. This ensures that the last letter of one paragraph is separated by a space from the first letter of the next paragraph, and that all paragraphs in the comment are treated as one block of text. The array of scripts, **list** is then copied into a global variable called **COMMENTS** to ensure easy access by other functions.
 
 *loadWebPage()*
 
@@ -28,5 +28,5 @@ The comma search function takes in the comma-separated string of entered keyword
 
 *emotionDetector()*
 
-The simple emotion detector functionuses **retext-sentiment** to convert each paragraph into a tree of nodes, with each paragraph, sentence, word, and punctuation mark being assigned an emotion that which contributes to the average emotion of the full text. 
+The simple emotion detector function uses **retext-sentiment** to convert each paragraph into a tree of nodes, with each paragraph, sentence, word, and punctuation mark being assigned an emotion that which contributes to the average emotion of the full text. 
 
