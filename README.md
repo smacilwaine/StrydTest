@@ -2,9 +2,9 @@
 
 ### Getting Started
 
-In terminal, run **node main.js**. This will launch the web server and initiate the process that collects comments from the DC Rainmaker article.
+Clone into the repo. Then, in the StrydTest folder, run **node main.js** in Terminal. This will launch the web server and initiate the process that collects comments from the DC Rainmaker article.
 
-Then, navigate to a browser and go to **localhost:8080**.
+Next, navigate to a web browser and go to **localhost:8080**.
 
 Type in the keyword(s) and press Enter or hit the Submit button. A new page of results will load and display the matching comments and corresponding tags. 
 
