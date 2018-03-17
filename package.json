@@ -19,6 +19,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "retext-english": "^3.0.0",
+    "retext-sentiment": "^4.1.0",
+    "to-vfile": "^2.2.0",
+    "unified": "^6.1.6",
+    "unist-util-inspect": "^4.1.2",
+    "vfile-reporter": "^4.0.0"
   }
 }
