@@ -10,7 +10,6 @@ const vfile = require('to-vfile');
 const report = require('vfile-reporter');
 const inspect = require('unist-util-inspect');
 
-let DONE = false;
 let COMMENTS = [];
 
 function emotionDetector(comment){
@@ -71,7 +70,6 @@ async function loadComments() {
 						num = num+1;
 					});
 					COMMENTS = list;
-					DONE = true;
 			}
 		}, (error) => console.log(err) );
 }
@@ -91,8 +89,8 @@ function loadWebPage() {
 					res.write("<title>Search Results</title></head><body>");
 					var body = querystring.parse(fullBody);
 					var matches = searchFn(body.keywords, COMMENTS);
-					res.write("<h3>Search Results for: "+body.keywords+"</h3><table border=1 style='width:100%'>");
-					res.write("<h4>Total Matches: "+matches.length+"</h4>");
+					res.write("<h3>Search Results for: "+body.keywords+"</h3><table border=1 style='margin-right:20px; margin-left:20px'>");
+					res.write("<h4>Total Results: "+matches.length+"</h4>");
 					for (var i in matches){
 						var emotion = emotionDetector(matches[i]);
 						res.write("<tr><td width='50%'>"+matches[i]);
